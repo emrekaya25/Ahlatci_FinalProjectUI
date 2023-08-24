@@ -1,0 +1,47 @@
+﻿@using ShoppingWEBUI.Core.DTO.Product
+@model List<ProductDTO>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/UserPanel/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    for (int i = 0; i < Model.Count(); i++)
+    {
+        string imagePath = "/MediaUploads/" + @Model[i].FeaturedImage;
+
+        <tr>
+
+            <td>
+          @*  <div class="movie">
+                 <div class="movie-image"> <span class="play"><span class="name">@Model[i].Name</span></span>
+                        <a href="@imagePath">
+                            <img src="@imagePath" alt="" />
+                        </a>
+                 </div>
+             </div> 
+                <div class="content">
+                    <div class="movie">
+                        <div class="movie-image">
+                            <span class="play"><span class="name">@Model[i].Name</span></span>
+                            <a href="@imagePath"><img src="@imagePath" alt="" /></a>
+                            <p class="text-right">@Model[i].Description</p>
+                            <div class="cl">&nbsp;</div>
+                        </div>
+                    </div>
+                </div> *@
+                <div class="content">
+                    <h4>@Model[i].Name </h4>
+                    <a class="content img"href="@imagePath"><img src="@imagePath" alt="" /></a>
+                    <p>@Model[i].Description</p>
+                </div>
+                <div class="cl">&nbsp;</div>
+                
+                
+                
+
+            </td>
+        </tr>
+    }
+}

@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>MovieHunter</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="~/UserUI/moviehunter/css/style.css" type="text/css" media="all" />
+    <script type="text/javascript" src="~/UserUI/moviehunter/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="~/UserUI/moviehunter/js/jquery-func.js"></script>
+    <!--[if IE 6]><link rel="stylesheet" href="css/ie6.css" type="text/css" media="all" /><![endif]-->
+</head>
+<body>
+    <!-- START PAGE SOURCE -->
+    <div id="shell">
+        <div id="header">
+            <h1 id="logo"><a href="#">MovieHunter</a></h1>
+            <div >
+                <ul>
+
+                </ul>
+            </div>
+            <div id="navigation">
+                <ul>
+                    <li><a class="active" href="/User/Anasayfa">Anasayfa</a></li>
+@*                     <li><a class="active" href="/User/Register">Kayıt Ol</a></li>
+                    <li><a class="active" href="/User/Login">Giriş Yap</a></li> *@
+
+                </ul>
+            </div>
+            <div id="sub-navigation">
+                <ul>
+                    
+                </ul>
+                 <div>
+                    <form>
+@*                         <label for="search-field">SEARCH</label>
+                        <input type="text" name="search field" value="Enter search here" id="search-field" class="blink search-field" />
+                        <input type="submit" value="GO!" class="search-button" /> *@
+                        <h1>FILMLERIM</h1>
+                    </form>
+                </div> 
+            </div>
+        </div>
+        <div id="main">
+            <div id="content">
+                    @RenderBody()
+            </div>
+
+            <div class="cl">&nbsp;</div>
+        </div>
+        <div id="footer">
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+    <!-- END PAGE SOURCE -->
+</body>
+</html>
